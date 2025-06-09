@@ -1,0 +1,22 @@
+# Ignore virtual environments
+venv/
+backend/venv/
+
+# Ignore local secrets
+.env
+backend/.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# VSCode settings (optional)
+.vscode/
+
+# Node modules (if using React frontend)
+frontend/node_modules/
+
+# Build outputs
+*.log
+*.sqlite3
+dist/
