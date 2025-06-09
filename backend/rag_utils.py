@@ -1,13 +1,13 @@
 # rag_utils.py
 
 
+import os
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '../secrets.env'))
 
 from openai import OpenAI
 from openai.types.chat import ChatCompletionMessageParam
 from pinecone import Pinecone, Vector
-import os
 
 # Load from environment variables 
 OPENAI_KEY = os.getenv("OPENAI_API_KEY")
