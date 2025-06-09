@@ -5,6 +5,7 @@ backend/venv/
 # Ignore local secrets
 .env
 backend/.env
+secrets.env
 
 # Python cache files
 __pycache__/
