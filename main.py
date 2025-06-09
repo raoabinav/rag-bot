@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
-from backend/rag_utils import retrieve_relevant_chunks, ask_with_context
+from rag_utils import retrieve_relevant_chunks, ask_with_context
 
 app = FastAPI()
 
