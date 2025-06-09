@@ -6,10 +6,10 @@ app = FastAPI()
 
 class ChatRequest(BaseModel):
     question: str
-    namespace: str
+
 
 @app.post("/ask")
 def chat_endpoint(req: ChatRequest):
-    context_chunks = retrieve_relevant_chunks(req.question, req.namespace)
+    context_chunks = retrieve_relevant_chunks(req.question, "avengers-bot")
     response = ask_with_context(req.question, context_chunks)
     return {"answer": response}
