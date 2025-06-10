@@ -1,2 +1,2 @@
 # rag-bot
-random ahh rag bot
+ every other generic rag-bot 😲
